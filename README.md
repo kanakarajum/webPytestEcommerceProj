@@ -4,3 +4,4 @@ AUT: http://automationpractice.com/index.php
 
 Framework & Tools:
 It is designed using pytest framework with selenium, using python as core coding language. This has log generation, report generation with html report plugins.
+Frameweork built on Page Object Model design pattern and Page chaining Model design.
