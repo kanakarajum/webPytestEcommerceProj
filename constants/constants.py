@@ -9,11 +9,16 @@ class Constants:
     BRAVE_APP_LOCATION = "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
 
     TIMEOUT_IN_SECONDS = 10
+    SLEEP_TIME = 5
     #   Home page constants
     HOME_PAGE_TITLE = "My Store"
 
     # AUTENTICATION PAGE CONSTANTS
     CREATE_AN_ACCOUNT_HEADER = "Create an account"
     ALREADY_REGISTERED_HEADER = "Already registered?"
-    EMAIL_ADDRESS = "pytestauto+01@gmail.com"
+    EMAIL_ADDRESS = "pytestauto"
     PASSWORD = "Pytest@123"
+    COUNTRY_UNITED_STATES = "United States"
+
+    FADED_SHORT_T_SHIRT = "Faded Short Sleeve T-shirts"
+    PRODUCT_SUCCESSFULLY_ADDED_TO_CART_MESSAGE = "Product successfully added to your shopping cart"
