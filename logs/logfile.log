@@ -5,3 +5,7 @@
 2021-04-07 20:56:30,562 :INFO : test_VerifyUserIsOnHomePage :User is at home page
 2021-04-07 20:56:30,658 :ERROR : test_VerifyUserIsOnHomePage :Made this fail purposefully ro get the error log and screenshots
 2021-04-07 20:56:30,695 :INFO : test_VerifyUserIsOnHomePage :Sign in link is displayed
+2021-04-07 21:22:40,104 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2021-04-07 21:22:40,179 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2021-04-07 21:22:40,243 :INFO : test_VerifyUserIsOnHomePage :Search query button exists
+2021-04-07 21:22:40,279 :INFO : test_VerifyUserIsOnHomePage :Sign in link is displayed
