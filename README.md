@@ -18,5 +18,7 @@ We can execute tests in 2 ways
 2. Using PyCharm IDE, configuring pytest.
 
 **Parallel execution**
+
 pytest -n <num>
-    -n runs the tests by using multiple workers
+    
+-n runs the tests by using multiple workers
