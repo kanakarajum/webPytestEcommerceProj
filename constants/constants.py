@@ -8,6 +8,7 @@ class Constants:
     EDGE_EXECUTABLE_PATH = "/Users/kanak/Documents/myAutomationSpace/drivers/msedgedriver"
     BRAVE_APP_LOCATION = "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
 
+    LOG_FILE_PATH = "/Users/kanak/Documents/myAutomationSpace/pythonProjects/webPytestEcommerceProj/webPytestEcommerceProj/logs/logfile.log"
     TIMEOUT_IN_SECONDS = 10
     SLEEP_TIME = 5
     #   Home page constants
