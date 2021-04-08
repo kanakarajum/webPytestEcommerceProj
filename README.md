@@ -19,4 +19,4 @@ We can execute tests in 2 ways
 
 **Parallel execution**
 pytest -n <num>
-    -n <num> runs the tests by using multiple workers
+    -n runs the tests by using multiple workers
