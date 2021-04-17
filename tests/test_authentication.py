@@ -1,4 +1,6 @@
 # THIS TEST CLASS HAS ALL TEST SCENARIOS FOR CREATE AN ACCOUNT FUNCTIONALITY
+import pytest
+
 from constants.constants import Constants
 from pages.homepage import HomePage
 from testdata.testdata import TestData
@@ -6,7 +8,7 @@ from tests.baseClass import BaseClass
 
 
 class Test_Authentication(BaseClass):
-
+    @pytest.mark.smoke
     def test_verifyCreateAnAccountUIElements(self):
         self.homepage = HomePage(self.driver)
         authenticationPage = self.homepage.click_on_signin_link()

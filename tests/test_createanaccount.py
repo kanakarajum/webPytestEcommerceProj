@@ -8,6 +8,7 @@ from tests.baseClass import BaseClass
 
 class Test_CreateAnAccount(BaseClass):
 
+    @pytest.mark.regression
     def test_registerAnAccount(self, getDataForCreateAnAccount):
         self.homepage = HomePage(self.driver)
         self.myaccount = MyAccount(self.driver)

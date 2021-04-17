@@ -10,6 +10,7 @@ from tests.baseClass import BaseClass
 
 class Test_SearchFunctionality(BaseClass):
 
+    @pytest.mark.regression
     def test_SearchForProduct(self, getDataToSignIN, getDataToSearchProduct):
         homepage = HomePage(self.driver)
         cartpage = CartPage(self.driver)
