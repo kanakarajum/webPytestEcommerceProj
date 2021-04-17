@@ -22,3 +22,11 @@ We can execute tests in 2 ways
 pytest -n <num>
     
 -n runs the tests by using multiple workers
+
+**PyTest markers with tags**
+
+Added pytest markers with smoke and regression tags for the tests
+
+Execution with tags:
+pytest -v -m smoke --html=report.html
+pytest -v -m regression --html=report.html
