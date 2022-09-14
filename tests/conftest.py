@@ -1,13 +1,15 @@
+import os
+
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 
 from constants.constants import Constants
 
 driver = None
 
-
 def pytest_addoption(parser):
-    parser.addoption("--browser_name", action="store", default="chrome")
+    parser.addoption("--browser_name", action="store", default="firefox")
     parser.addoption("--URL", action="store", default=Constants.AUT_URL)
 
 
@@ -23,32 +25,30 @@ def setup(request):
         browserOptions = webdriver.ChromeOptions()
         browserOptions.add_argument("--start-maximized")
         browserOptions.binary_location = Constants.BRAVE_APP_LOCATION
-        driver = webdriver.Chrome(executable_path=Constants.CHROME_EXECUTABLE_PATH, options=browserOptions)
+        objService = Service("{}{}".format(Constants.RESOURCES_DIR_PATH, "chromedriver"))
+        driver = webdriver.Chrome(service=objService)
+        # driver = webdriver.Chrome(executable_path=Constants.CHROME_EXECUTABLE_PATH, options=browserOptions)
     elif browser_name == "chrome":
         browserOptions = webdriver.ChromeOptions()
         # browserOptions.add_argument("start-fullscreen")
         # browserOptions.add_argument("--start-maximized")
-        driver = webdriver.Chrome(
-            executable_path=Constants.CHROME_EXECUTABLE_PATH, options=browserOptions)
+        # browserOptions.add_experimental_option("excludeSwitches", ["enable-automation"])
+        # browserOptions.add_experimental_option('useAutomationExtension', False)
+        objService = Service("{}{}".format(Constants.RESOURCES_DIR_PATH, "chromedriver"))
+        driver = webdriver.Chrome(service=objService)
         driver.maximize_window()
     elif browser_name == "firefox":
-        browserOptions = webdriver.FirefoxOptions()
-        browserOptions.add_argument("--start-maximized")
-        driver = webdriver.Firefox(
-            executable_path=Constants.FIREFOX_EXECUTABLE_PATH, options=browserOptions)
-    elif browser_name == "IE":
-        browserOptions = webdriver.IeOptions()
-        browserOptions.add_argument("--start-maximized")
-        driver = webdriver.Ie(executable_path="/Users/kanak/Documents/myAutomationSpace/drivers/IEDriverServer",
-                              options=browserOptions)
+        driver = webdriver.Firefox()
     elif browser_name == "edge":
-        driver = webdriver.Edge(executable_path=Constants.EDGE_EXECUTABLE_PATH)
+        objService = Service("{}{}".format(Constants.RESOURCES_DIR_PATH, "msedgedriver"))
+        driver = webdriver.Edge(service=objService)
         driver.maximize_window()
     URL = request.config.getoption("--URL")
     driver.get(URL)
     request.cls.driver = driver
     yield
     print(">>>>>>>>>>>>>> I am in set up fixture - after YIELD >>>>>>>>>>>>>>>>>")
+    driver.quit()
     driver.close()
 
 
@@ -74,6 +74,5 @@ def pytest_runtest_makereport(item):
                 extra.append(pytest_html.extras.html(html))
         report.extra = extra
 
-
 def _capture_screenshot(name):
-    driver.get_screenshot_as_file(name)
+    setup.get_screenshot_as_file(name)

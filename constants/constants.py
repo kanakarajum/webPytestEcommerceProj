@@ -1,20 +1,29 @@
 # '''THIS CLASS HAS ALL THE CONSTANTS'''
+from pathlib import Path
 
 
 class Constants:
+
+    # GENERATE RESOURCE DIR PATH
+    ROOT_DIR = Path(__file__).parent.parent
+    RESOURCES_DIR_PATH = "{}{}".format(ROOT_DIR, "/resources/")
+
+    # APPLICATION URL
     AUT_URL = "http://automationpractice.com/index.php"
-    CHROME_EXECUTABLE_PATH = "/Users/kanak/Documents/myAutomationSpace/drivers/chromedriver"
-    FIREFOX_EXECUTABLE_PATH = "/Users/kanak/Documents/myAutomationSpace/drivers/geckodriver"
-    EDGE_EXECUTABLE_PATH = "/Users/kanak/Documents/myAutomationSpace/drivers/msedgedriver"
+
+    # DRIVERS PATH
     BRAVE_APP_LOCATION = "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
 
     LOG_FILE_PATH = "/Users/kanak/Documents/myAutomationSpace/pythonProjects/webPytestEcommerceProj/webPytestEcommerceProj/logs/logfile.log"
+
+    # TIMEOUTS
     TIMEOUT_IN_SECONDS = 10
     SLEEP_TIME = 5
-    #   Home page constants
+
+    # HOME PAGE CONSTANTS
     HOME_PAGE_TITLE = "My Store"
 
-    # AUTENTICATION PAGE CONSTANTS
+    # AUTHENTICATION PAGE CONSTANTS
     CREATE_AN_ACCOUNT_HEADER = "Create an account"
     ALREADY_REGISTERED_HEADER = "Already registered?"
     EMAIL_ADDRESS = "pytestauto"

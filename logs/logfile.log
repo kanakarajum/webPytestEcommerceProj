@@ -9,3 +9,37 @@
 2021-04-07 21:22:40,179 :INFO : test_VerifyUserIsOnHomePage :User is at home page
 2021-04-07 21:22:40,243 :INFO : test_VerifyUserIsOnHomePage :Search query button exists
 2021-04-07 21:22:40,279 :INFO : test_VerifyUserIsOnHomePage :Sign in link is displayed
+2021-04-16 22:01:37,107 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2021-04-16 22:01:37,162 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2021-04-16 22:04:10,122 :INFO : test_VerifySearchQuerySection :Search query button exists
+2021-04-16 22:04:10,156 :INFO : test_VerifySignInLink :Sign in link is displayed
+2021-04-16 22:09:29,425 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2021-04-16 22:09:29,460 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2021-04-16 22:09:29,584 :INFO : test_VerifySearchQuerySection :Search query button exists
+2021-04-16 22:09:29,612 :INFO : test_VerifySignInLink :Sign in link is displayed
+2021-04-22 22:04:33,346 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2021-04-22 22:04:33,385 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2021-04-22 22:04:33,700 :INFO : test_VerifySearchQuerySection :Search query button exists
+2021-04-22 22:04:33,781 :INFO : test_VerifySignInLink :Sign in link is displayed
+2022-09-13 11:35:32,169 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 11:35:32,248 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 15:52:34,197 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 15:52:34,238 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 18:06:23,096 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 18:06:23,148 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 18:10:21,431 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 18:10:21,499 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 18:14:57,913 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 18:14:57,966 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 18:21:41,922 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 18:21:41,977 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 19:35:32,659 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 19:35:32,704 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 19:41:07,051 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 19:41:07,087 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 19:54:39,646 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 19:54:39,790 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 19:55:39,658 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 19:55:39,706 :INFO : test_VerifyUserIsOnHomePage :User is at home page
+2022-09-13 19:58:25,370 :INFO : test_VerifyUserIsOnHomePage :My Storeis matching with home page title
+2022-09-13 19:58:25,423 :INFO : test_VerifyUserIsOnHomePage :User is at home page
